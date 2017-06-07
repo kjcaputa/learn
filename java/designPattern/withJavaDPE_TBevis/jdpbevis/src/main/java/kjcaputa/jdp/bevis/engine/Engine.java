@@ -1,4 +1,4 @@
-package kjcaputa.jdp.bevis;
+package kjcaputa.jdp.bevis.engine;
 
 public interface Engine
 {

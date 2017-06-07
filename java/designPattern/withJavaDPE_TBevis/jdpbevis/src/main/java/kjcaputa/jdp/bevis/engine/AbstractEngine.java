@@ -1,4 +1,4 @@
-package kjcaputa.jdp.bevis;
+package kjcaputa.jdp.bevis.engine;
 
 public abstract class AbstractEngine implements Engine
 {
@@ -30,19 +30,18 @@ public abstract class AbstractEngine implements Engine
 
     public boolean equals(Object other)
     {
-        //        if (this == other)
-        //        {
-        //            return true;
-        //        }
-        //
-        //        if (!(other instanceof Engine))
-        //        {
-        //            return false;
-        //        }
+        if (this == other)
+        {
+            return true;
+        }
 
-        //Engine otherEngine = (Engine) other;
-        //        return this.toString().equals(otherEngine.toString());
-        return this == other && other instanceof Engine && this.toString().equals(((Engine) other).toString());
+        if (!(other instanceof Engine))
+        {
+            return false;
+        }
+
+        Engine otherEngine = (Engine) other;
+        return this.toString().equals(otherEngine.toString());
     }
 
     public int hashCode()
