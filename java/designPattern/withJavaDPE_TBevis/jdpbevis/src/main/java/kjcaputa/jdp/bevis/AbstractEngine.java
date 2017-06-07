@@ -1,6 +1,6 @@
 package kjcaputa.jdp.bevis;
 
-public /* abstract */ class AbstractEngine implements Engine
+public abstract class AbstractEngine implements Engine
 {
     private final int size;
 
